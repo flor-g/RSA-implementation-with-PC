@@ -6,7 +6,7 @@
 
 * **MMN as auditory prediction error (language-adjacent).** The mismatch negativity is frequently explained within predictive coding: stable regularities induce predictions that deviant sounds violate, yielding error responses; this framing competes with adaptation accounts (Garrido, Kilner, Stephan, & Friston, 2009; May & Tiitinen, 2021). 
 
-* **Active Inference variants.** Active Inference—an algorithmic/process-theory cousin of predictive coding—has been used to model perception and policy selection, offering neurally plausible dynamics applicable to language processing tasks (Friston, FitzGerald, et al., 2017). 
+* **Active Inference variants.** Active Inference (an algorithmic/process-theory cousin of predictive coding) has been used to model perception and policy selection, offering neurally plausible dynamics applicable to language processing tasks (Friston, FitzGerald, et al., 2017). 
 
 * **Convergence and debate with surprisal.** N400 amplitude correlates with language-model surprisal across corpora and languages, suggesting complementary perspectives: surprisal captures information-theoretic predictability, while PC adds neurodynamics and hierarchical error propagation (Frank, Otten, Galli, & Vigliocco, 2015; Lopopolo et al., 2023). 
 
