@@ -32,7 +32,8 @@ I will reuse the “free-parameter” trick at the semantic interface and the sa
 
 **Expected contributions.**
 
-1. A unifying account that ties RSA’s explanatory successes in vagueness to an explicit, neurally-plausible inference mechanism (PC). 2) A portable implementation (adjectives → nouns) showing that pragmatic inference over free semantic parameters generalizes beyond degrees. 3) Concrete, testable process-level predictions (confidence, speed) that are absent in a purely computational-level RSA story.
+1. A unifying account that ties RSA’s explanatory successes in vagueness to an explicit, neurally-plausible inference mechanism (PC).
+2. A portable implementation (adjectives → nouns) showing that pragmatic inference over free semantic parameters generalizes beyond degrees. 3) Concrete, testable process-level predictions (confidence, speed) that are absent in a purely computational-level RSA story.
 
 **Feasibility & plan.**
 
