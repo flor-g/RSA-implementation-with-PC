@@ -1,27 +1,27 @@
 ### Foundations & cortical architecture
 
-* **Core hierarchical scheme.** PC posits hierarchies of prediction units sending top-down predictions and error units sending bottom-up residuals; the classic instantiation explains extra-classical receptive-field effects and provides explicit update equations (Rao & Ballard, 1999). ([Department of Computer Science][1])
-* **Unified cortical response theory.** PC is embedded in the free-energy/variational framing, linking evoked responses, inference, and learning (Friston, 2005; Friston, 2010). ([fil.ion.ucl.ac.uk][2])
-* **Canonical microcircuits.** Laminar feedforward/feedback asymmetries and frequency-specific channels (e.g., gamma vs. beta) map onto predictive vs. error pathways (Bastos et al., 2012). ([Cell][3])
+* **Core hierarchical scheme.** PC posits hierarchies of prediction units sending top-down predictions and error units sending bottom-up residuals; the classic instantiation explains extra-classical receptive-field effects and provides explicit update equations (Rao & Ballard, 1999). 
+* **Unified cortical response theory.** PC is embedded in the free-energy/variational framing, linking evoked responses, inference, and learning (Friston, 2005; Friston, 2010). 
+* **Canonical microcircuits.** Laminar feedforward/feedback asymmetries and frequency-specific channels (e.g., gamma vs. beta) map onto predictive vs. error pathways (Bastos et al., 2012). 
 
 ### Tutorials & mathematical guides (how to implement)
 
-* **Step-by-step derivations.** Accessible introductions derive recognition dynamics, precision weighting, and learning rules under the free-energy principle—handy for writing code (Bogacz, 2017; Buckley, Kim, McGregor, & Seth, 2017). ([mrcbndu.ox.ac.uk][4])
-* **Algorithmic variants.** A systematic review compares PC algorithms and clarifies what “predictive coding” refers to across implementations (Spratling, 2017). ([ScienceDirect][5])
+* **Step-by-step derivations.** Accessible introductions derive recognition dynamics, precision weighting, and learning rules under the free-energy principle—handy for writing code (Bogacz, 2017; Buckley, Kim, McGregor, & Seth, 2017). 
+* **Algorithmic variants.** A systematic review compares PC algorithms and clarifies what “predictive coding” refers to across implementations (Spratling, 2017). 
 
 ### Learning rules & links to backpropagation
 
-* **Local Hebbian PC ≈ backprop.** A predictive-coding network can approximate error backpropagation using only local plasticity (Whittington & Bogacz, 2017). ([mrcbndu.ox.ac.uk][6])
-* **Exact results and general graphs.** Under specific conditions, PC can implement *exact* backprop in MLPs and extend to CNNs/RNNs; further, PC converges to backprop on arbitrary computation graphs and ships with recipes to translate ML architectures (Song, Lukasiewicz, Xu, & Bogacz, 2020; Salvatori, Song, Lukasiewicz, Bogacz, & Xu, 2021; Millidge, Tschantz, & Buckley, 2020). ([NeurIPS Proceedings][7])
+* **Local Hebbian PC ≈ backprop.** A predictive-coding network can approximate error backpropagation using only local plasticity (Whittington & Bogacz, 2017). 
+* **Exact results and general graphs.** Under specific conditions, PC can implement *exact* backprop in MLPs and extend to CNNs/RNNs; further, PC converges to backprop on arbitrary computation graphs and ships with recipes to translate ML architectures (Song, Lukasiewicz, Xu, & Bogacz, 2020; Salvatori, Song, Lukasiewicz, Bogacz, & Xu, 2021; Millidge, Tschantz, & Buckley, 2020). 
 
 ### Deep architectures & runnable code
 
-* **PredNet.** A deep recurrent convolutional network inspired by PC for next-frame video prediction; paper and open-source implementation (Lotter, Kreiman, & Cox, 2016/2017). ([arXiv][8])
-* **PC ≈ BP codebases.** Public repos reproduce results for PC-as-backprop on arbitrary computation graphs and provide reference implementations for CNNs/RNNs (Millidge et al., 2020; community implementations of Whittington & Bogacz, 2017). ([GitHub][9])
+* **PredNet.** A deep recurrent convolutional network inspired by PC for next-frame video prediction; paper and open-source implementation (Lotter, Kreiman, & Cox, 2016/2017). 
+* **PC ≈ BP codebases.** Public repos reproduce results for PC-as-backprop on arbitrary computation graphs and provide reference implementations for CNNs/RNNs (Millidge et al., 2020; community implementations of Whittington & Bogacz, 2017). 
 
 ---
 
-## References (APA 7)
+## References 
 
 Bastos, A. M., Usrey, W. M., Adams, R. A., Mangun, G. R., Fries, P., & Friston, K. J. (2012). Canonical microcircuits for predictive coding. *Neuron, 76*(4), 695–711. [https://doi.org/10.1016/j.neuron.2012.10.038](https://doi.org/10.1016/j.neuron.2012.10.038) ([Cell][3])
 
