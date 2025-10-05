@@ -19,7 +19,7 @@ PC is an approximate Bayesian inference scheme where top-down predictions and bo
 3. **Sorites:** Compute the probabilities of inductive premises under two readings (material-conditional and Adams’ Thesis `P(B | A)`), and under L&G’s “free-variable in the conditional” interpretation that conditions on a cooperative assertion. The target pattern is high-probability premises with a low-probability absurd conclusion.
 
 **Work package 2 — Extend to nouns.**
-I will reuse the “free-parameter” trick at the semantic interface and the same RSA-PC inference loop. Two noun types:
+I will reuse the free-parameter model at the semantic interface and the same RSA-PC inference loop. Two noun types:
 
 * **Thresholded nouns (soritical):** Introduce a latent boundary `θ_N` over a salient scalar (e.g., harmfulness for *weapon*, age for *child*). Truth = `μ_N(x) > θ_N`. Infer `(A, θ_N)` under RSA-PC from uses like “That is a weapon,” predicting graded borderline membership and sorites-like tolerance. (Direct analogue of the adjective case.)
 * **Prototype/region nouns (polythetic):** Represent categories as regions in a conceptual space with latent prototype `μ`, dimension weights `w`, and tolerance `τ`. Truth ≈ `sim(x, μ; w) > τ`. Treat `V = {μ, w, τ}` as free variables inferred in the RSA-PC loop; predict context-sensitive category boundaries and gradedness when priors over features or QUD vary. (Complements L&G’s note that non-scalar vagueness likely requires such extra structure.)
