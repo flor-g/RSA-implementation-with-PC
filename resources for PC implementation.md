@@ -4,7 +4,7 @@
 * **Unified cortical response theory.** PC is embedded in the free-energy/variational framing, linking evoked responses, inference, and learning (Friston, 2005; Friston, 2010). 
 * **Canonical microcircuits.** Laminar feedforward/feedback asymmetries and frequency-specific channels (e.g., gamma vs. beta) map onto predictive vs. error pathways (Bastos et al., 2012). 
 
-### Tutorials & mathematical guides (how to implement)
+### Tutorials & mathematical guides 
 
 * **Step-by-step derivations.** Accessible introductions derive recognition dynamics, precision weighting, and learning rules under the free-energy principle—handy for writing code (Bogacz, 2017; Buckley, Kim, McGregor, & Seth, 2017). 
 * **Algorithmic variants.** A systematic review compares PC algorithms and clarifies what “predictive coding” refers to across implementations (Spratling, 2017). 
