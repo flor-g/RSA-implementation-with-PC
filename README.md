@@ -1,10 +1,10 @@
 ## Preliminary Project Description: *Predictive Coding as an Algorithmic Implementation of RSA for Vagueness, with an Extension to Nouns*
 
 **Motivation & Goal.**
-The Rational Speech Act (RSA) framework (Lassiter & Goodman, 2015 ([Stanford][1])) explains vagueness for gradable adjectives (e.g., *tall*) by treating the adjective’s threshold as a free variable inferred jointly with the world state in a speaker–listener game. This yields context sensitivity, borderline cases, and sorites-like judgments without special semantic machinery. What RSA leaves open is the *process* by which listeners compute these posteriors online and how precision (confidence) is set. This project proposes a predictive-coding (PC) implementation of RSA: RSA provides the computational target (the joint posterior over answers and thresholds), and PC supplies the algorithmic procedure (precision-weighted prediction-error minimization) to reach it. I will replicate core RSA results for adjectives and extend the same mechanism to nouns, comparing two noun templates: thresholded (e.g., *weapon*, *child*) and prototype/region categories (e.g., *cup/bowl*, *bird*).
+The Rational Speech Act (RSA) framework (Lassiter & Goodman, 2015 ([Stanford][1])) models vagueness for gradable adjectives (e.g., *tall*) by treating the adjective’s threshold as a free variable inferred jointly with the world state in a speaker–listener game. This model accounts for context sensitivity, borderline uncertainty, and sorites-like judgments without special semantic machinery. What RSA leaves open is the process by which listeners compute these posteriors online and how precision (confidence) is set. This project proposes a predictive-coding (PC) implementation of RSA: RSA provides the computational target (the joint posterior over answers and thresholds), and PC supplies the algorithmic procedure (precision-weighted prediction-error minimization) to reach it. I will replicate core RSA results for adjectives and extend the same mechanism to nouns, comparing two noun templates: thresholded (e.g., *weapon*, *child*) and prototype/region categories (e.g., *cup/bowl*, *bird*).
 
 **Core idea.**
-Lassiter & Goodman's "Adjectival vagueness in a Bayesian model of interpretation" (2015) proposes a formal model of how the free threshold in adjectives are determined in-context, which they named the Rational Speech Act (RSA). This model adopts a three-step recursive bayesian inference approach: the pragmatic listener L1 infers world state (A) from the utterance (u) of the speaker S1, who infers the utterance from a supposed literal listener(L0)'s world state given the literal meaning of u is true. The function performed by each agent is as follows: <br>
+Lassiter & Goodman's "Adjectival vagueness in a Bayesian model of interpretation" (2015) proposes a formal model of how the free threshold in adjectives are determined in-context, which they named the Rational Speech Act (RSA). This model adopts a three-step recursive bayesian inference approach: the pragmatic listener L1 infers world state (A) from the utterance (u) of the speaker S1, who infers the utterance from a supposed literal listener(L0)'s world state, who infers the world state given the literal meaning of u is true. The function performed by each agent is as follows: <br>
 $$
 P_{L_0}(A \mid u, V) \;=\; P_{L_0}\!\big(A \mid \llbracket u \rrbracket_V = 1\big)
 $$
@@ -18,7 +18,7 @@ $$
 P_{L_1}(A, V \mid u) \;\propto\; P_{S_1}(u \mid A, V)\,P_{L_1}(A)\,P_{L_1}(V)
 $$
 <br>
-
+(!need to figure out LaTex embedding)
 **Predictive-coding implementation.**
 PC is an approximate Bayesian inference scheme where top-down predictions and bottom-up, precision-weighted errors are iteratively updated. In this project, observing an utterance `u` drives error units on the “utterance” node (a categorical/softmax likelihood mirroring `S1`’s choice model), and updates flow to the latent variables for `A` and `V` until they settle near `P(A, V | u)`. Precision (inverse variance) acts as a control knob predicting trial-wise confidence and speed (e.g., sharper priors or stronger cues → faster, more confident convergence). This connects RSA’s interpretive posteriors to behavioral and neurocognitive signatures argued to reflect predictive processing.
 
